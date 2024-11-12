@@ -14,7 +14,7 @@ import { ConfigModule } from '@nestjs/config';
     EmployeesModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'db',
       port: 5432,
       username: 'postgres',
       password: 'pass123',
