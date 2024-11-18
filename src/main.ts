@@ -10,12 +10,14 @@ async function bootstrap() {
     origin: '*',
     methods: 'GET,HEAD,PUT,POST,DELETE,OPTIONS,PATCH',
     allowedHeaders: 'Content-Type, Accept, Authorization',
-    credentials: true,  
+    credentials: true,
   });
 
   const config = new DocumentBuilder()
     .setTitle('Recursos Humanos API fácil')
-    .setDescription('API para gestão de funcionários, departamentos e outras funcionalidades de Recursos Humanos')
+    .setDescription(
+      'API para gestão de funcionários, departamentos e outras funcionalidades de Recursos Humanos',
+    )
     .setVersion('1.0')
     .addTag('Bhayron Lindo')
     .build();
